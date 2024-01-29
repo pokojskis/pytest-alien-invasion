@@ -63,6 +63,7 @@ class AlienInvasion:
         elif event.key == pygame.K_UP:
             self.ship.is_moving_up = False
 
+
 if __name__ == '__main__':
     ai = AlienInvasion()
     ai.run_game()
