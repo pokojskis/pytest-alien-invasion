@@ -74,7 +74,7 @@ class AlienInvasion:
         self.bullets.update()
 
         for bullet in self.bullets.copy():
-            if bullet.rect.left >= self.screen.get_rect().width:
+            if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
 
     def _fire_bullet(self):
